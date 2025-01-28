@@ -1,0 +1,100 @@
+#adminDashboardMainContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+#adminDashboard_slidebar{
+    width: 20%;
+    background-color: #dc143c;
+    height: 100vh;
+}
+
+#adminDashboard_content_container{
+    width: 80%;
+    background-color: #e3e3e3;
+}
+
+#adminDashboard_logo{
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+}
+
+#adminDashboard_slidebar_user{
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+#adminDashboard_slidebar_user #userImage{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #fff;
+    vertical-align: middle;
+}
+
+#adminDashboard_slidebar_user #userName{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+}
+
+.adminDashboard_menu_lists{
+    margin-top: 20px;
+}
+
+.adminDashboard_menu_lists li{
+    padding: 15px 15px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.adminDashboard_menu_lists li:hover{
+    background-color: #f64e70;
+    transition: 0.5s all;
+}
+
+.adminDashboard_menu_lists li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+
+.adminDashboard_menu_lists li i{
+    font-size: 20px;
+}
+
+.adminDashboard_topNav{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.adminDashboard_topNav i{
+    font-size: 20px;
+    color: #000;
+}
+
+.adminDashboard_topNav a{
+    text-decoration: none;
+    color: #000;
+}
+
+.adminDashboard_topNav a:nth-child(2){
+    float: right;
+    font-size: 20px;
+}
+
+.adminDashboard_content{
+    padding: 30px 10px 10px 10px;
+}
+
+.adminDashboard_content_main{
+    background-color: #fff;
+    min-height: 800px;
+    height: 100%;
+}

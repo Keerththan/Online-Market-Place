@@ -1,0 +1,76 @@
+:root {
+  --lightcolor: #ccccd1;
+}
+
+.progressSection .holder {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  
+  .progressSection .holder > div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .star-light {
+    color: #bbb5 !important;
+  }
+  
+  .text-warning {
+    color: rgb(250, 143, 43) !important;
+  }
+  
+  .submit_star {
+    cursor: pointer;
+  }
+
+  .jumbotron {
+    font-size: 1.5rem; 
+}
+
+h1 {
+    font-size: 2.0rem; 
+}
+
+.progress-label-left, .progress-label-right {
+    font-size: 1rem; 
+}
+
+#avg_rating, #total_review {
+    font-size: 2.0rem; 
+}
+
+#avg_rating_list {
+  font-size :1.5rem
+}
+
+.starAvg {
+  font-size: 1.2rem; /* Adjust size as needed */
+}
+
+.card-header {
+  font-size: 1.4rem; /* Adjust size as needed */
+}
+
+
+.card-body {
+  font-size: 1.2rem; 
+}
+
+
+.card-footer {
+  font-size: 1rem; 
+}
+
+.jumbotron {
+  background-color: var(--lightcolor); 
+  padding: 10px;
+  border-radius: 0.5rem; 
+}
+
+.jumbotron img {
+  max-width: 100%;
+  height: auto; 
+}
+

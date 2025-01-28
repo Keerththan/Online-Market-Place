@@ -1,0 +1,187 @@
+:root {
+    --primary-color: #007BFF; /* Bootstrap primary blue */
+    --secondary-color: #FFC107; /* Bootstrap warning yellow */
+    --background-color: #fdfffa; /* Gray for the main area */
+    --light-background-color: #F0F4FF; /* Light blue for subtle background */
+    --text-color: #333333; /* Dark grey for better readability */
+    --border-color: #CED4DA; /* Light grey for borders */
+    --font-family: 'Roboto', sans-serif; /* Professional sans-serif font */
+    --font-color: #4A4A4A; /* Slightly lighter dark grey for text */
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: #E1E9FF; /* Soft light blue for contrast */
+    color: var(--text-color);
+}
+
+.customer-profile {
+    background-color: var(--background-color); /* Gray for main profile area */
+    padding: 30px; /* Increased padding for a more spacious feel */
+    border-radius: 12px; /* Slightly larger border radius */
+    max-width: 600px;
+    margin: 20px auto; /* Add margin for better spacing */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Softer and larger shadow */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.customer-profile:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.profile-display,
+.profile-edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+.profile-pic {
+    width: 160px; /* Slightly larger image */
+    height: 160px; /* Slightly larger image */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color); /* Thicker border */
+    transition: border-color 0.3s; /* Animation for border on hover */
+}
+
+.profile-pic:hover {
+    border-color: var(--secondary-color); /* Change border color on hover */
+}
+
+.default-pic {
+    width: 160px; /* Increased default icon size */
+    height: 160px; /* Increased default icon size */
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the icon */
+    font-size: 2.5rem; /* Increased icon size */
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.info-item {
+    margin: 12px 0; /* Increased margin for better spacing */
+    font-size: 1.2rem; /* Increased font size for info items */
+    color: var(--font-color); /* Set a colorful font color */
+    transition: color 0.3s; /* Animation for text color */
+}
+
+.info-item:hover {
+    color: var(--primary-color); /* Change text color on hover */
+}
+
+.edit-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px; /* Increased padding for buttons */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Added transform and shadow for effect */
+}
+
+.edit-button:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.profile-image-edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose-file-button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px; /* Increased padding for buttons */
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 12px; /* Increased margin for better spacing */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Added transform and shadow for effect */
+}
+
+.choose-file-button:hover {
+    background-color: #d39e00; /* Darker yellow for hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.cu-form-group {
+    margin: 15px 0; 
+    width: 100%;
+}
+
+.cu-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem; 
+}
+
+.cu-form-group input,
+.cu-form-group select {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem; 
+    transition: border-color 0.3s; 
+}
+
+.cu-form-group input:focus,
+.cu-form-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.save-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px; /* Increased padding for buttons */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Added transform and shadow for effect */
+}
+
+.save-button:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .customer-profile {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    .profile-pic {
+        width: 140px; /* Slightly smaller image for mobile */
+        height: 140px; /* Slightly smaller image for mobile */
+    }
+
+    .info-item {
+        font-size: 1rem; /* Adjusted font size for mobile */
+    }
+
+    .edit-button,
+    .choose-file-button,
+    .save-button {
+        padding: 10px 20px; /* Adjusted padding for mobile */
+        font-size: 1rem; /* Adjusted font size for mobile */
+    }
+}

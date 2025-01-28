@@ -1,0 +1,32 @@
+.product-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image Styling */
+  .product-image {
+    width: 100%; /* Set width to 300px */
+    height: 10%; /* Set height to 300px */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center image */
+    border-radius: 10px; /* Rounded corners */
+  }
+  .card-text-size{
+    font-size: 8px;
+  }
+  /* Font size for product names */
+  .product-name {
+    font-size: 10px;
+    font-weight: bold; 
+    /* Reduced font size */
+  }
+ 
+  

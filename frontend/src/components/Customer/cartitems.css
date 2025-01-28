@@ -1,0 +1,199 @@
+.cart-items-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 3rem auto;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-title {
+    font-family: 'Roboto', sans-serif;
+    color: #007BFF;
+}
+
+.place-order-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.place-order-btn:hover {
+    background-color: #218838;
+}
+
+.cart-body {
+    overflow-x: auto;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.cart-item-row {
+    transition: background-color 0.2s;
+}
+
+.cart-item-row:hover {
+    background-color: #f1f1f1;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.product-name {
+    color: #343a40;
+    font-weight: 500;
+}
+
+.quantity-input {
+    width: 60px;
+    text-align: center;
+}
+
+.remove-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+.invoice-table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.total-amount-cell {
+    text-align: center;
+    font-weight: bold;
+}
+
+.total-amount {
+    color: #007BFF;
+}
+
+.cancel-button,
+.confirm-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268;
+}
+
+.confirm-button {
+    background-color: #007BFF;
+    color: white;
+}
+
+.confirm-button:hover {
+    background-color: #0056b3;
+}
+.quantity-input {
+    width: 60px;
+    text-align: center;
+    border: 2px solid #007BFF; /* Blue border */
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Added transition for smooth effect */
+}
+
+.quantity-input:focus {
+    border-color: #28a745; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Green shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+.quantity-input:hover {
+    border-color: #17a2b8; /* Change border color on hover */
+    box-shadow: 0 0 8px rgba(23, 162, 184, 0.5); /* Blue shadow on hover */
+}
+
+.quantity-input::placeholder {
+    color: #6c757d; /* Grey placeholder text */
+    opacity: 0.8; /* Slightly faded */
+}
+
+/* Add a label for styling */
+.quantity-label {
+    font-weight: bold; /* Make label bold */
+    margin-right: 5px; /* Space between label and input */
+    color: #343a40; /* Dark text color */
+}
+.cart-items-card {
+    background-color: #ffffff; /* White background */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 105, 180, 0.5); /* Pink glow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.cart-items-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 40px rgba(0, 255, 255, 0.6), 0 0 30px rgba(255, 0, 255, 0.6); /* Enhanced glow effect */
+}
+
+.item-checkbox{
+    width: 20px;  /* Adjust size here */
+    height: 20px; /* Adjust size here */
+    border: 2px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+
+.invoice-table td{
+    font-size: 130%;
+}
+
+.c-table-tdata{
+    font-size: 100%;
+}
+
+.confirm-button{
+    font-size: 130%;
+}
+
+.cancel-button{
+    font-size: 130%;
+}
+#tm{
+    font-size: 150%;
+}

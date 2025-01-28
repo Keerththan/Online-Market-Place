@@ -1,0 +1,586 @@
+/* src/App.css */
+
+* {
+    
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* :root {
+    --color1: #0f124b;
+    --color2: #7892ba;
+    --color3: #9b95e4;
+    --color4: #2cecf0;
+    --color5: #d6d5e4;
+    --color6: #335f67d9;
+    --black: #000;
+    --white: #fff;
+    --lightgray: #eedede;
+    --red: rgb(245, 39, 67);
+  } */
+
+  :root {
+    --color1: #0f124b;
+    --color2: #4a709d;
+    --color3: #9b95e4;
+    --color4: #2cecf0;
+    --color5: #d6d5e4;
+    --color6: #335f67d9;
+    --black: #000;
+    --color8: #0e0b0b;
+    --white: #ffffff;
+    --lightgray: #ffffff;
+    --red: rgb(245, 39, 67);
+  }
+  body {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  
+  /* Add product.js css */
+ 
+    .maincontainer {
+    margin: auto;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top:20px ;
+    padding-bottom: 5rem;
+    height: 100%;
+    /* background-color: var(--lightgray); */
+    background-color: #f4f6f9;
+  }  
+  
+  .add-container {
+    margin: auto;
+    padding-bottom: 5rem;
+    height: 100%;
+    background-color: var(--lightgray);
+  } 
+
+  /* display message css */
+
+  .display_message {
+    background-color: var(--color2);
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .display_message span {
+    font-size: 2rem;
+  }
+  .display_message i {
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  
+  .display_message i:hover {
+    color: var(--red);
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 3.2rem 0 0.5rem;
+    color: var(--color1);
+  }
+  
+  
+  /* add products , update productsform */
+
+  .add_product,
+  .update_product {
+    width: 75%;
+    background-color: var(--color2);
+    border-radius: 0.5rem;
+    padding: 2rem 3rem;
+    height: 75%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .add_product .input_fields,
+  .update_product .input_fields {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.0rem;
+    color: var(--black);
+    background-color: var(--white);
+    margin: 0.5rem auto;
+    width: 90%;
+    
+    
+  }
+  
+  /* submit buttons update and add */
+  
+  .submit_btn,
+  .edit_btn,
+  .cancel_btn {
+    display: block;
+    width: 50%;
+    text-align: center;
+    background-color: var(--color1);
+    color: var(--white);
+    font-size: 1.0rem;
+    padding: 0.8rem 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+  .cancel_btn {
+    background-color: var(--red);
+    margin: 2rem auto;
+  }
+  .submit_btn:hover {
+    color: var(--color3);
+  }
+
+  .edit_btn:hover {
+    color: var(--color3);
+    background-color: rgb(40, 50, 91);
+  }
+
+  .cancel_btn:hover {
+    color: var(--color3);
+    background-color: rgb(171, 70, 77);
+  }
+
+  .customer-btn:hover {
+    background-color: #17a2b8; 
+    color: white; 
+    border-color: #138496;
+  }
+  
+  /* view_products ,Order , Customer tables  */
+
+  .display_details table {
+    width:100%;
+    text-align: center;
+
+  }
+
+  .table_heading {
+    box-shadow: 0px 0px 2px 8px rgba(154, 153, 153, 0.4); 
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    background-color: #8e8f91;
+    margin-bottom: 0;
+    margin-top: 8px;
+    position: relative;
+  }
+
+  .table_heading h3 {
+    text-align: left;
+    font-weight: 600;
+  } 
+
+  @media (max-width: 420px) {
+    .table_heading  {
+      justify-content: flex-start;
+     
+  }
+  .table_heading  h3{
+    margin-left: 20px;  
+}
+}
+
+  /* table heading search box  */
+  .search_container {
+    position: absolute; 
+    right: 10px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .search_container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search_input {
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+  }
+
+  .search_input:focus {
+    outline: none;
+    border-color: #ff9800;
+  }
+  
+  .search_icon {
+    color: #333;
+    font-size: 20px;
+  }
+  
+/* table some css add */
+  .display_details table{
+     background-color: white;
+  }
+  .display_details table thead th {
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    background-color: var(--color2);
+    color: var(--white);
+  }
+
+  .display_details table tr{
+    border: 2px solid rgb(113, 112, 112);
+  }
+
+  .display_details tfoot {
+    background-color: #9b9a9a;
+    font-size: 1.1rem;
+  }
+
+  .display_details{
+    box-shadow: 0px 5px 4px 8px rgba(154, 153, 153, 0.4); 
+    border-collapse: collapse; 
+  }
+  
+
+  td {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--color1);
+    border: 1px solid var(--color8);
+    text-transform: capitalize;
+  }
+
+  .empty_text {
+    background-color: var(--color2);
+    padding: 2.5rem 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+
+  /* buttons */
+
+  .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+   .delete_product_btn,
+   .update_product_btn {
+    text-align: center;
+    color: var(--red);
+    font-size: 1.7rem;
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+
+  .delete_product_btn{
+    background-color: var(--lightgray);
+  }
+
+  .update_product_btn {
+    color: var(--color2);
+  }
+
+  .update_product_btn:hover{
+    color:rgb(121, 100, 228);
+  }
+
+  .delete_product_btn:hover{
+    color:rgb(224, 114, 114);
+  }
+
+
+  /* update product input container */
+  .price_container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .currency_label {
+    margin-right:8px; 
+  }
+  .price_container input::-webkit-outer-spin-button,
+  .price_container input::-webkit-inner-spin-button {
+    -webkit-appearance:none ; 
+  } 
+
+  
+  .product_container_box {
+    text-align: center;
+    height: 70%;
+  }
+  
+
+  img {
+    width: 20%;
+    margin: 0 auto;
+  }
+  
+  /* CSS for error message */
+  
+  .error_message {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 0.2rem;
+    width: 300px;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-top: -0.5rem;
+    margin-bottom: 0.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    animation: slide 1s forwards; /* Slide animation for error message */
+  }
+
+  /* order table calender icon  */
+
+  .calender-icon {
+    color: rgb(83, 19, 174);
+    border: none;
+    cursor: pointer;
+    padding:10px ;
+
+  }
+  
+  .calender-icon:hover {
+    color: #007bff;
+  }
+  
+  .calendar-icon {
+    font-size: 18px;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .calendar-icon:hover {
+    color: #0056b3;
+  }
+
+
+  /* Responsive css */
+  
+  @keyframes slide {
+    0% {
+        transform: translateX(120%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+  }
+  
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 90%;
+    }
+  }
+
+  @media (max-width: 912px) {
+    html {
+      font-size: 88%;
+    }
+  }
+
+  @media (max-width: 850px) {
+    html {
+      font-size: 85%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+    html {
+      font-size: 80%;
+    }
+    #menu-btn {
+      display: inline-block;
+      transition: 0.2s linear;
+    }
+  
+    #menu-btn.fa-times {
+      transform: rotate(180deg);
+    }
+  
+    .header .header_body .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background-color: var(--blue);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: 0.2s linear;
+    }
+  
+    .header .header_body .navbar.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      background-color: var(--color1);
+    }
+  
+    .header .header_body .navbar a {
+      margin: 2rem;
+      display: block;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+  
+    .display_details {
+      overflow-x: scroll;
+    }
+  
+    .display_details table {
+      width: 90rem;
+    }
+    .table_bottom {
+      display: block;
+      text-align: center;
+    }
+    .bottom_btn {
+      color: var(--black);
+      font-size: 1.3rem;
+      background-color: var(--color4);
+      padding: 1rem;
+      margin: 2rem 0;
+    }
+  }
+  
+  @media (max-width: 465px) {
+    html {
+      font-size: 60%;
+    }
+  
+    .heading {
+      font-size: 3rem;
+    }
+  
+    .products .product_container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+  
+    .heading {
+      font-size: 3rem;
+    }
+  
+    .products .product_container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  /* Order table */
+
+  .table-body-small td{
+    font-size: 15px;
+  }
+
+  
+  /* table row wise hover */
+  
+  table tbody tr:hover {
+    background-color: #e5e3e3; 
+    transition: background-color 0.3s; 
+}
+
+/* Optional: Style for empty text */
+.empty_text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #e8dfdf;
+}
+
+/* message card */
+
+.card-color{
+  background-color: var(--color5);
+}
+
+/* order date picker */
+
+.datepicker-wrapper {
+  display: inline-block; 
+}
+
+.small-datepicker {
+  width: 120px; 
+  font-size: 0.9rem; 
+  padding: 4px; 
+  border: 1px solid #ced4da; 
+  border-radius: 0.25rem; 
+}
+
+.small-datepicker:focus {
+  outline: none; 
+  border-color: #80bdff; 
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.save-button {
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  border-radius: 0.25rem; 
+  padding: 3px 8px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  
+}
+
+.save-button:hover {
+  background-color: #0056b3; 
+  transform: scale(1.05); 
+}
+
+.save-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); 
+}
+
+/* message notification status  */  /* message notification status  */
+
+.notification-badge {
+  position: absolute;
+  top:3px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.0rem 0.4rem;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* log-out css */
+.logout-btn:hover {
+   background-color: #f8f9fa;
+  color: #dc3545; 
+  border-radius: 5px; 
+}

@@ -1,0 +1,161 @@
+:root {
+  --lightcolor: #ccccd1;
+}
+
+.progressSection .holder {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  
+  .progressSection .holder > div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .star-light {
+    color: #bbb5 !important;
+  }
+  
+  .text-warning {
+    color: rgb(250, 143, 43) !important;
+  }
+  
+  .submit_star {
+    cursor: pointer;
+  }
+
+  .jumbotron {
+    font-size: 1.5rem; 
+}
+
+h1 {
+    font-size: 2.0rem; 
+}
+
+.progress-label-left, .progress-label-right {
+    font-size: 1rem; 
+}
+
+#avg_rating, #total_review {
+    font-size: 2.0rem; 
+}
+
+#avg_rating_list {
+  font-size :1.5rem
+}
+
+.starAvg {
+  font-size: 1.2rem; /* Adjust size as needed */
+}
+
+.card-header {
+  font-size: 1.4rem; /* Adjust size as needed */
+}
+
+
+.card-body {
+  font-size: 1.2rem; 
+}
+
+
+.card-footer {
+  font-size: 1rem; 
+}
+
+.jumbotron {
+  background-color: var(--lightcolor); 
+  padding: 10px;
+  border-radius: 0.5rem; 
+}
+
+.jumbotron img {
+  max-width: 100%;
+  height: auto; 
+}
+
+/* Modal Header */
+.modal-header-custom {
+  background-color: #004085;  /* Dark blue */
+  color: white;
+  border-bottom: 2px solid #007bff;
+}
+
+.modal-title-custom {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Modal Body */
+.modal-body-custom {
+  background-color: #f8f9fa; /* Light gray */
+}
+
+/* Rating Stars */
+.rating-stars-custom .fa-star {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.rating-stars-custom .fa-star:hover {
+  color: #ffc107;  /* Star color when hovered (gold) */
+}
+
+/* Form Group Customization */
+.form-group-custom {
+  margin-bottom: 1.5rem;
+}
+
+.feedback-input-custom {
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #e9ecef;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-input-custom:focus {
+  background-color: white;
+}
+
+/* Submit Button */
+.submit-btn-custom {
+  background-color: #28a745;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.submit-btn-custom:hover {
+  background-color: #218838;  /* Darker green on hover */
+  transform: scale(1.05);  /* Slightly enlarge button on hover */
+}
+
+
+/* add review button */
+/* Add Review Button */
+.btn-add-review {
+  background-color: #007bff;  /* Primary blue color */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for 3D effect */
+}
+
+.btn-add-review:hover {
+  background-color: #0056b3;  /* Darker blue on hover */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);  /* Shadow expands on hover */
+}
+
+.btn-add-review:active {
+  background-color: #004085;  /* Even darker blue when clicked */
+  transform: scale(0.98);     /* Slight shrink effect when clicked */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}

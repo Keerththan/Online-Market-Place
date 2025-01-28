@@ -1,0 +1,111 @@
+/* Main container styles */
+.product-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Card styles */
+  .product-card {
+    border: 2px solid transparent; /* Initial transparent border */
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+    background-color: white; /* Card background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Background and border colors for each product */
+  .product-card:nth-child(odd) {
+    border: 2px solid gold; /* Gold border for odd products */
+  }
+  
+  .product-card:nth-child(even) {
+    border: 2px solid blue; /* Blue border for even products */
+  }
+  
+  /* Header styles */
+  .product-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: purple; /* Header background color */
+    color: white; /* Header text color */
+  }
+  
+  /* Search input styles */
+  .search-input {
+    background-color: #333; /* Dark background for input */
+    color: white; /* Input text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for input */
+  }
+  
+  .search-input::placeholder {
+    color: lightgray; /* Placeholder text color */
+  }
+  
+  /* Button styles */
+  .add-to-cart-button {
+    background-color: red; /* Default button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for button */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover */
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: darkred; /* Darker red on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+  }
+  
+  .buy-now-button {
+    background-color: white; /* Buy now button background */
+    color: red; /* Buy now button text color */
+    border: 2px solid red; /* Red border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for button */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover */
+  }
+  
+  .buy-now-button:hover {
+    background-color: red; /* Change to red on hover */
+    color: white; /* Change text color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+  }
+  
+  /* Review button styles */
+  .review-button {
+    background-color: gray; /* Default gray button */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for button */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover */
+  }
+  
+  .review-button:hover {
+    background-color: darkgray; /* Darker gray on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+  }
+  
+  /* Card title styles */
+  .product-title {
+    font-size: 1.2em; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Dark text color */
+  }
+  
+  .product-price {
+    font-size: 1.1em; /* Adjust font size */
+    color: green; /* Green text color for price */
+  }
+  

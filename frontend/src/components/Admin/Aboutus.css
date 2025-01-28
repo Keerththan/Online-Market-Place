@@ -1,0 +1,56 @@
+/* About Us section background with overlay */
+.about-section {
+    position: relative;
+    background-image: url('path_to_your_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 20px;
+}
+
+.about-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for better text readability */
+    z-index: -1; /* Send it behind the content */
+}
+
+/* Styling for the About Us text */
+.about-info {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Styling for the image with responsiveness */
+.img-custom {
+    max-width: 100%; /* Image adapts to the container */
+    height: auto;
+    width: 400px; /* Set a fixed width for larger screens */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .img-custom {
+        width: 100%; /* Make it full-width on smaller screens */
+    }
+}
+
+.img-custom:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Learn More button styling */
+.btn-outline-primary {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}

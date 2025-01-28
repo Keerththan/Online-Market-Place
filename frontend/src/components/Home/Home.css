@@ -1,0 +1,448 @@
+.homeHeaderLogo{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 100px; */
+    /* margin-left: 30px; */
+}
+
+#logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    margin: 15px;
+    
+}
+  
+#logoTitle{
+    color: white;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+#ring {
+    width: 275px;
+    height: 275px;
+    border: 0px solid transparent;
+    border-radius: 70%;
+    position: absolute;
+    z-index: -1;
+    margin-bottom: 100px;
+}
+  
+#ring:nth-child(1) {
+    border-bottom: 28px solid rgb(255, 141, 249);
+    animation: rotate1 2s linear infinite;
+}
+  
+@keyframes rotate1 {
+    from {
+      transform: rotateX(50deg) rotateZ(110deg);
+    }
+  
+    to {
+      transform: rotateX(50deg) rotateZ(470deg);
+    }
+}
+  
+#ring:nth-child(2) {
+    border-bottom: 28px solid rgb(255,65,106);
+    animation: rotate2 2s linear infinite;
+  }
+  
+@keyframes rotate2 {
+    from {
+      transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+    }
+  
+    to {
+      transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+    }
+}
+  
+#ring:nth-child(3) {
+    border-bottom: 28px solid rgb(0,255,255);
+    animation: rotate3 2s linear infinite;
+  }
+  
+@keyframes rotate3 {
+    from {
+      transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+    }
+  
+    to {
+      transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+    }
+  }
+  
+#ring:nth-child(4) {
+    border-bottom: 28px solid rgb(252, 183, 55);
+    animation: rotate4 2s linear infinite;
+  }
+  
+  @keyframes rotate4 {
+    from {
+      transform: rotateX(70deg) rotateZ(270deg);
+    }
+  
+    to {
+      transform: rotateX(70deg) rotateZ(630deg);
+    }
+  }
+
+
+.homeHeader{
+    width: 100%;
+    background: #490365;
+    padding: 15px 0px;
+    text-align: right;
+    justify-content: center;
+    display: flex;
+} 
+
+.homeHeaderLinks a{
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 30px;
+}
+
+.homeHeaderLinks a:hover{
+    background-color: hsl(0, 0%, 93%);
+    color: #400358;
+}
+
+
+.background-opacity {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+  }
+  
+  .background-opacity::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* height: 100%;  */
+    background-size:auto;
+    background: url('../../../public/images/home/bg-elitez.jpg') no-repeat center center ;
+    /* background-color: #57d4ef; */
+    opacity: 0.7; /* Set your desired opacity level */
+    z-index: -1; /* Place the pseudo-element behind the content */
+    /* background-repeat: no-repeat; */
+  }
+
+
+.homePageContainer{
+    width: 100%;
+    /* max-width: 900px; */
+    height: 65vh;
+    /* margin: 0 auto; */
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.homeBannerHeader{
+    display: flex;
+    flex-direction: column;
+}
+.mt-150{
+    margin-top: 150px;
+}
+.homeBannerHeader h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color:#490365;
+    line-height: 100%;
+}
+
+.homeBannerHeader p{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.homeBannerTagline{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.homeBannerIcons{
+    margin-top: 40px;
+    text-align: center;
+  
+
+}
+.homeBannerIcons a{
+    display: inline-block;
+    text-decoration: none;
+}
+.homeBannerIcons a i{
+    font-size: 20px;
+    margin-left: 40px;
+    padding: 15px 15px;
+    background-color: #dc143c;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeBannerIcons a:first-child{
+    margin-left: 0px;
+}
+
+.homeBannerIcons a i:hover{
+    background-color: #ffffff;
+    color: #dc143c;
+    transition: .5s all;
+    border: 1px solid #dc143c;
+}
+
+.homePageFeatures{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.homePageFeature{
+    padding: 10px 20px;
+    width: 30%;
+}
+
+.homePageFeature:hover{
+    border: 2px solid #f64e70;
+    transition: 0.5s all;
+}
+.homePageFeatureIcon{
+    display: flex;
+    justify-content: center;
+}
+.homePageFeatureIcon i{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background-color: #dc143c;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.homePageFeature h3{
+    font-size: 25px;
+    margin: 15px;
+}
+
+.homePageFeature p{
+    font-size: 15px;
+    color: #464444; 
+}
+
+.homePageNotified{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e3e3;
+    padding: 50px 100px;
+    height: 40vh;
+}
+
+.homePageNotified .emailForm{
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.homePageNotified .emailForm h1{
+    margin-bottom:20px;
+}
+
+.homePageNotified .emailForm p{
+    line-height: 150%;
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #464444;
+}
+
+.notifyFormContainer{
+    position: relative;
+    text-align: center;
+}
+
+.notifyFormContainer input{
+    padding: 10px 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+.notifyFormContainer input:focus{
+    outline: none;
+}
+
+.notifyFormContainer button{
+    position: absolute;
+    right: 15%;
+    font-size: 15px;
+    width: 15%;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #dc143c;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+}
+
+.homePageSocials{
+    text-align: center;
+    padding: 40px 0 40px 0px;
+}
+
+.homePageSocials h3{
+    margin: 15px;
+    font-size: 25px;
+}
+
+.homePageSocials p{
+    color: #464444;
+    font-size: 12px;
+}
+
+.homePageSocialsIconsContainer a {
+    text-decoration: none;
+    display: inline-block;
+}
+.homePageSocialsIconsContainer a i{
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dc143c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.homePageSocialsIconsContainer a i:hover{
+    background-color: #ffffff;
+    color: #dc143c;
+    transition: .5s all;
+    border:2px solid #dc143c;
+    
+}
+
+.homeFooter{
+    text-align: center;
+    background-color: #e3e3e3;
+    padding: 50px;
+}
+
+.homeFooter a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #464444;
+    padding: 10px;
+    margin: 5px;
+}
+
+.homeFooter a:hover{
+    font-weight: bold;
+    color: #dc143c;
+    transition: 0.5s all;
+}
+
+.loader {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    margin-left: 10px; /* Space between button and loader */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.success-message {
+    color: green;
+    animation: fadeIn 1s; /* Animation for success message */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.homePageCards {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for cards section */
+}
+
+.homePageCardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+    gap: 20px; /* Space between cards */
+}
+
+.homePageCard {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; /* Fixed width for cards */
+    transition: transform 0.2s;
+}
+
+.homePageCard:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.homePageCardIcon {
+    font-size: 40px;
+    color: #dc143c; /* Icon color */
+}
+
+.homePageCard h3 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+}
+
+.homePageCard p {
+    color: #555;
+    font-size: 15px;
+}
+

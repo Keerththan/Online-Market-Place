@@ -1,0 +1,133 @@
+.navbar {
+  background-color: rgb(25, 25, 60);
+}
+
+.fabar:hover {
+  color: rgb(52, 52, 130);
+}
+
+.focus-outline-none:focus {
+  outline: none;
+}
+.bg-color {
+  background-color: rgb(57, 57, 88);
+}
+
+.bg-headercolor{
+  background-color:rgb(218, 218, 233);
+}
+
+
+  /* Chart color */
+
+  .bg-chart{
+    background-color: rgba(203, 216, 221, 0.736);
+    border: 3px solid black;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bg-chart.bar{
+    max-width: 600px;
+    height: 400px;
+  }
+  .bg-chart.pie{
+    max-width: 600px;
+    height: 400px;
+  }
+
+@media (min-width: 768px) {
+  .text-md-black {
+    color: black;
+  }
+
+  .md-absolute {
+    position: absolute;
+  }
+
+  .md-w-25 {
+    width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sm-relative {
+    position: relative;
+  }
+  .text-sm-white {
+    color: white;
+  }
+}
+
+.inset-y-0 {
+  top: 0;
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.h-100vh{
+  height: 100vh;
+}
+.h-full {
+  height: 100%;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+.h-10 {
+  height: 2.5rem;
+}
+.h-14 {
+  height: 3.5rem;
+}
+.h-12 {
+  height: 3.4rem;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+.w-10 {
+  width: 2.5rem;
+}
+.w-14 {
+  width: 3.5rem;
+}
+
+.ml-64 {
+  margin-left: 16rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/* .hover-bg-blue-500:hover {
+  background-color: rgb(0, 0, 0);
+} */
+.z-1000{
+  z-index: 1000;
+}
